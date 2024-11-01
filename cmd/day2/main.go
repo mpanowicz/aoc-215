@@ -1,9 +1,10 @@
 package main
 
 import (
+	"aoc/internal/helpers"
+
 	"bufio"
 	"bytes"
-	"fmt"
 	"io"
 	"os"
 	"strconv"
@@ -119,8 +120,5 @@ func solution() (int, int) {
 }
 
 func main() {
-	p1, p2 := solution()
-
-	fmt.Printf("Part 1 result: %d\n", p1)
-	fmt.Printf("Part 2 result: %d\n", p2)
+	helpers.PrintResult(solution())
 }
