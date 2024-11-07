@@ -1,8 +1,14 @@
 package helpers
 
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+)
 
 func ParseInt(s string) int {
-	v, _ := strconv.Atoi(s)
+	v, e := strconv.Atoi(s)
+	if e != nil {
+		fmt.Println(e)
+	}
 	return v
 }
