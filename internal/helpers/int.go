@@ -12,3 +12,11 @@ func ParseInt(s string) int {
 	}
 	return v
 }
+
+func SumInt(l []int) int {
+	s := 0
+	for i := range l {
+		s += l[i]
+	}
+	return s
+}
