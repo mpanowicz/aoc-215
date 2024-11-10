@@ -20,3 +20,11 @@ func SumInt(l []int) int {
 	}
 	return s
 }
+
+func PowInt(b, e int) int {
+	pow := 1
+	for range e {
+		pow = pow * b
+	}
+	return pow
+}
